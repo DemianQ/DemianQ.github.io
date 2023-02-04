@@ -1,0 +1,128 @@
+{box-sizing: border-box;
+    /* para que no crezcan los bordes mas de lo que quiero */  
+}
+/* si de lugar de usar px uso el tamaño se acopla en relacion al tamaño de la ventana */
+html{
+    scroll-behavior: smooth;
+}
+/* seleccionamos todo el html para cuando se seleccione los menus se deslize y se vea mas bonito */
+body {
+    background-color: rgb(57, 0, 57);
+    margin: 0;
+    font-family:'Times New Roman', Times, serif;  
+}  
+/* si usamos el formato mas chiquito de la ventana se llama mobile first y si trabajamos así es menos codigo lo que hacemos */
+
+h1{font-size: 3.5em;}
+h2{font-size: 2em;}
+h3{font-size: 2em;}
+p{ font-size: 1.6em;}
+button{
+    font-size: 1.25em;
+    /* sive es el tamaño */
+    font-weight:bold;
+    padding: 10px 30px;
+    border-radius: 20px;
+    /* para que el boton tenga borde redondos */
+    background-color: cyan;
+    border: 2px rgb(1, 1, 74,7);
+    /* el cuarto número es para opacidad */
+    box-shadow: 2px 1.5px 1.5px;
+}
+button:hover {
+    background-color:rgb(0, 98, 98) ;
+/* para que se note cuando el cursor se apoya en el botón */
+ }
+.container{
+    max-width: 1500px;
+    /* ancho maximo de todo lo que este en el conteiner */
+    margin: auto;
+    /* margen automatico */
+}
+header{
+    background-color: rgb(93, 1, 93);
+ }
+header .logo{
+    margin: 0;
+    padding: 15px initial ;
+    /* arriba,abajo,los costados */
+    text-align: center;
+    font-weight:bold;
+    color: cyan;
+    font-size: 1.5em;
+    /* para que se agrande el tamaño de la letras */
+   
+ }
+header.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+header nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    padding-bottom: 15px;
+ }
+header a{
+    padding: 5px 15px;
+    text-decoration: none;
+    /* para sacar el subrayado */
+    color: black;
+    font-weight: bold;
+    font-size: 1.3em;
+ }
+header a:hover{
+    color: aqua;
+ }
+/* cambia el color de la letras cuando pase el cursor encima */
+#hero{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 60vh;
+    color: aqua;
+    /* no entendí lo de altura negativa pero usa 90% de la pantalla independientemente del dispositivo */
+    background-image:
+    url("fondo1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* para que use todo el espacio disponible */
+    background-position: right center;    
+ }
+#hero h1{
+    color: blueviolet;
+ }
+/* agarra toda la seccion con ID hero */
+#sobremi{
+ color: cyan;
+ background-color: rgb(35, 0, 35);
+ }
+#sobremi .container{
+    text-align: center;
+  padding: 40px; 
+ }
+#sobremi h2{
+    margin-top: 0;
+    font-size: 2em;
+ }
+#sobremi p{
+    display: none;  
+    
+ }
+/* hacemos que los parrafos no se vean */
+#sobremi .carta{
+    background-image: url("DALL·E\ 2023-02-03\ 18.54.13\ -\ programación\ con\ temática\ cyberpunk\ .png");
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-size:auto;
+    padding: 20px;
+    border-radius: 60px;
+    margin-top: 10px;
+ }
+footer p{
+    font-size: small;
+    color: aliceblue;
+}
