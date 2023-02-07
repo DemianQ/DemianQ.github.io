@@ -7,11 +7,15 @@ html{
 }
 /* seleccionamos todo el html para cuando se seleccione los menus se deslize y se vea mas bonito */
 body {
-    background-color: rgb(57, 0, 57);
+    background-color: rgb(6, 0, 52);
     margin: 0;
     font-family:'Times New Roman', Times, serif;  
 }  
 /* si usamos el formato mas chiquito de la ventana se llama mobile first y si trabajamos así es menos codigo lo que hacemos */
+.all{
+    width:100%;
+    margin: 0 auto;
+}
 
 h1{font-size: 3.5em;}
 h2{font-size: 2em;}
@@ -24,31 +28,31 @@ button{
     padding: 10px 30px;
     border-radius: 20px;
     /* para que el boton tenga borde redondos */
-    background-color: cyan;
+    background-color: rgb(0, 114, 114);
     border: 2px rgb(1, 1, 74,7);
     /* el cuarto número es para opacidad */
     box-shadow: 2px 1.5px 1.5px;
 }
 button:hover {
-    background-color:rgb(0, 98, 98) ;
+    background-color:rgb(6, 0, 52) ;
 /* para que se note cuando el cursor se apoya en el botón */
  }
 .container{
-    max-width: 1500px;
+    max-width: 80%;
     /* ancho maximo de todo lo que este en el conteiner */
     margin: auto;
     /* margen automatico */
 }
 header{
-    background-color: rgb(93, 1, 93);
+    background-color: rgb(6, 0, 52);
  }
 header .logo{
     margin: 0;
-    padding: 15px initial ;
+    padding: 15% initial ;
     /* arriba,abajo,los costados */
     text-align: center;
     font-weight:bold;
-    color: cyan;
+    color: rgb(242, 255, 155);
     font-size: 1.5em;
     /* para que se agrande el tamaño de la letras */
    
@@ -66,15 +70,15 @@ header nav{
     padding-bottom: 15px;
  }
 header a{
-    padding: 5px 15px;
+    padding: 5% 15;
     text-decoration: none;
     /* para sacar el subrayado */
-    color: black;
+    color:  rgb(0, 114, 114);
     font-weight: bold;
     font-size: 1.3em;
  }
 header a:hover{
-    color: aqua;
+    color: rgb(242, 255, 155);
  }
 /* cambia el color de la letras cuando pase el cursor encima */
 #hero{
@@ -83,8 +87,7 @@ header a:hover{
     flex-direction: column;
     justify-content: center;
     height: 60vh;
-    color: aqua;
-    /* no entendí lo de altura negativa pero usa 90% de la pantalla independientemente del dispositivo */
+    color: rgb(6, 0, 52);
     background-image:
     url("fondo1.jpg");
     background-repeat: no-repeat;
@@ -93,12 +96,12 @@ header a:hover{
     background-position: right center;    
  }
 #hero h1{
-    color: blueviolet;
+    color:  rgb(6, 0, 52);
  }
 /* agarra toda la seccion con ID hero */
 #sobremi{
- color: cyan;
- background-color: rgb(35, 0, 35);
+ color: rgb(242, 255, 155);
+ background-color:rgb(6, 0, 52);
  }
 #sobremi .container{
     text-align: center;
@@ -109,8 +112,7 @@ header a:hover{
     font-size: 2em;
  }
 #sobremi p{
-    display: none;  
-    
+    display: none;   
  }
 /* hacemos que los parrafos no se vean */
 #sobremi .carta{
@@ -122,7 +124,20 @@ header a:hover{
     border-radius: 60px;
     margin-top: 10px;
  }
-footer p{
-    font-size: small;
-    color: aliceblue;
-}
+ 
+ @media screen and (min-width:750px) {
+   #sobremi p{
+    display: contents;
+   }
+   #top  p{
+    color: black;
+   }
+   #top a{
+    color: black;
+   }
+ }
+ 
+ 
+ 
+ 
+ 
